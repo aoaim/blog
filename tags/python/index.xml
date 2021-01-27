@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Miaonote</title>
+    <link>https://miaom.uk/tags/python/</link>
+    <description>Recent content in Python on Miaonote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://miaom.uk/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>小議程序的優雅</title>
+      <link>https://miaom.uk/2021/01/disscuss-the-elegance-of-the-program/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://miaom.uk/2021/01/disscuss-the-elegance-of-the-program/</guid>
+      <description>&lt;p&gt;主要還是因爲我太蔡了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Python 速成</title>
+      <link>https://miaom.uk/2021/01/a-crash-course-in-python/</link>
+      <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://miaom.uk/2021/01/a-crash-course-in-python/</guid>
+      <description>&lt;p&gt;本篇摘抄與&lt;a href=&#34;https://www.ituring.com.cn/book/tupubarticle/34241&#34;&gt;《數據科學入門（第二版）》第二章&lt;/a&gt;。在圖靈社區閑逛時偶然發現這一章，如獲至寶。這篇不是 Python 的完整教程，但包含了 Python 的基礎操作和基本技能，如同一個速查表。好好學習！&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何在服務器上凑一個 Jupyter Notebook</title>
+      <link>https://miaom.uk/2021/01/how-to-install-jupyter-notebook-in-your-server/</link>
+      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://miaom.uk/2021/01/how-to-install-jupyter-notebook-in-your-server/</guid>
+      <description>&lt;p&gt;在個人服務器上安裝一個 &lt;code&gt;Jupyer Notebook&lt;/code&gt; 可能可以更&lt;del&gt;折騰&lt;/del&gt;方便的學習和使用 &lt;code&gt;Python&lt;/code&gt; 和 &lt;code&gt;R&lt;/code&gt;。&lt;/p&gt;
+&lt;p&gt;此次安裝環境為 Debian 10 (buster), 64-bit PC。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>《Python 編程：從入門到實踐》學習筆記</title>
+      <link>https://miaom.uk/2020/12/the-note-of-python-crash-course/</link>
+      <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://miaom.uk/2020/12/the-note-of-python-crash-course/</guid>
+      <description>&lt;p&gt;2020 年 12 月 28 日在&lt;a href=&#34;https://www.ituring.com.cn/book/2784&#34;&gt;圖靈社區&lt;/a&gt;購入《Python 編程：從入門到&lt;del&gt;放棄&lt;/del&gt;實踐 第二版》并開始學習。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

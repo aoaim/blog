@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>小議程序的優雅 - Miaonote</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="小議程序的優雅" />
+<meta property="og:description" content="主要還是因爲我太蔡了。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://miaom.uk/2021/01/disscuss-the-elegance-of-the-program/" />
+<meta property="article:published_time" content="2021-01-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2021-01-21T00:00:00+00:00" />
+
+		<meta itemprop="name" content="小議程序的優雅">
+<meta itemprop="description" content="主要還是因爲我太蔡了。">
+<meta itemprop="datePublished" content="2021-01-21T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2021-01-21T00:00:00+00:00" />
+<meta itemprop="wordCount" content="624">
+
+
+
+<meta itemprop="keywords" content="Python," />
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Miaonote" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cat.svg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Miaonote</div>
+					<div class="logo__tagline">你的夢想是世界上最偉大的事</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/links/">
+				
+				<span class="menu__text">Links</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">小議程序的優雅</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-01-21T00:00:00Z">2021-01-21</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/" rel="category">興趣學習</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents"></nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p>主要還是因爲我太蔡了。</p>
+<p>事情的緣起是這樣的，在學習《Python 編程：從入門到到放棄》這本書中我遇到了一道題：</p>
+<pre><code>練習 9-15 创建一个列表或元组，其中包含 10 个数和 5 个字母。从这个列表或元组中随机地选择 4 个数或字母，并打印一条消息，指出只要彩票上是这 4 个数或字母，就中大奖了。可使用循环来搞明白中彩票大奖有多难。为此，创建一个名为 my_ticket 的列表或元组，再编写一个循环，不断地随机选择数或字母，直到中大奖为止。请打印一条消息，指出执行循环多少次才中了大奖。
+</code></pre><p>自己寫的代碼始終跑不出結果，百思不得其解遂請教 Jam 和 Poka 大佬。</p>
+<p>Poka 給出的代碼如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> choice
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">random_game</span>():
+    possibilities <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;1&#34;</span>, <span style="color:#e6db74">&#34;2&#34;</span>, <span style="color:#e6db74">&#34;3&#34;</span>, <span style="color:#e6db74">&#34;4&#34;</span>, <span style="color:#e6db74">&#34;5&#34;</span>, <span style="color:#e6db74">&#34;6&#34;</span>, <span style="color:#e6db74">&#34;7&#34;</span>, <span style="color:#e6db74">&#34;8&#34;</span>, <span style="color:#e6db74">&#34;9&#34;</span>, <span style="color:#e6db74">&#34;10&#34;</span>, <span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>, <span style="color:#e6db74">&#34;e&#34;</span>]
+    tickets <span style="color:#f92672">=</span> []
+    <span style="color:#66d9ef">while</span> len(tickets) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>:
+        v <span style="color:#f92672">=</span> choice(possibilities)
+        <span style="color:#66d9ef">if</span> v <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> tickets:
+            tickets<span style="color:#f92672">.</span>append(v)
+    <span style="color:#66d9ef">return</span> tickets
+
+winner_tickets <span style="color:#f92672">=</span> random_game()
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;The Winner tickets is {winner_tickets}!&#34;</span>)
+
+user_tickets <span style="color:#f92672">=</span> []
+num <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+
+<span style="color:#66d9ef">while</span> user_tickets <span style="color:#f92672">!=</span> winner_tickets:
+    user_tickets <span style="color:#f92672">=</span> random_game()
+    <span style="color:#75715e"># 如果需要考慮列表中元素的順序</span>
+    <span style="color:#75715e"># user_tickets.sort()</span>
+    <span style="color:#75715e"># winner_tickets.sort()</span>
+    num <span style="color:#f92672">=</span> num <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">print</span>(user_tickets)
+
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;Congratulation! The user tickets is {user_tickets},&#34;</span>)
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;His odds of winning are 1/{num}!&#34;</span>)
+</code></pre></div><p>Jam 給出的代碼如下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> sample
+<span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> List, Set
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">random_game</span>(possibilities: List, nums: int <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>) <span style="color:#f92672">-&gt;</span> Set:
+    <span style="color:#66d9ef">return</span> set(sample(possibilities, nums))
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">main</span>():
+    possibilities <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>, <span style="color:#e6db74">&#34;e&#34;</span>]
+    nums <span style="color:#f92672">=</span> <span style="color:#ae81ff">4</span>
+
+    winner_tickets <span style="color:#f92672">=</span> random_game(possibilities, nums)
+    <span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;The winner tickets is {winner_tickets}.&#34;</span>)
+    num <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+    <span style="color:#66d9ef">while</span> True:
+        user_tickets <span style="color:#f92672">=</span> random_game(possibilities, <span style="color:#ae81ff">4</span>)
+        <span style="color:#75715e"># print(f&#34;The user tickets is {user_tickets}.&#34;)</span>
+        num <span style="color:#f92672">=</span> num <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+        <span style="color:#66d9ef">if</span> user_tickets <span style="color:#f92672">==</span> winner_tickets:
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;Congratulations&#34;</span>)
+            <span style="color:#66d9ef">break</span>
+    <span style="color:#66d9ef">print</span>(num)
+
+<span style="color:#66d9ef">if</span> __name__<span style="color:#f92672">==</span><span style="color:#e6db74">&#39;__main__&#39;</span>:
+    main()
+</code></pre></div><p>兩位大佬給出的代碼都能很快的計算出結果。再看看我的渣代碼：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">from</span> random <span style="color:#f92672">import</span> choice
+
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">random_game</span>():
+    tickets <span style="color:#f92672">=</span> []
+    possibilities <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>, <span style="color:#ae81ff">5</span>, <span style="color:#ae81ff">6</span>, <span style="color:#ae81ff">7</span>, <span style="color:#ae81ff">8</span>, <span style="color:#ae81ff">9</span>, <span style="color:#ae81ff">10</span>, <span style="color:#e6db74">&#34;a&#34;</span>, <span style="color:#e6db74">&#34;b&#34;</span>, <span style="color:#e6db74">&#34;c&#34;</span>, <span style="color:#e6db74">&#34;d&#34;</span>, <span style="color:#e6db74">&#34;e&#34;</span>]
+    <span style="color:#66d9ef">while</span> len(tickets) <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>:
+        value <span style="color:#f92672">=</span> choice(possibilities)
+        <span style="color:#66d9ef">if</span> value <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> tickets:
+            tickets<span style="color:#f92672">.</span>append(value)
+    <span style="color:#66d9ef">return</span> tickets
+
+winner_tickets <span style="color:#f92672">=</span> random_game()
+<span style="color:#66d9ef">print</span>(f<span style="color:#e6db74">&#34;The winner tickets is {winner_tickets}.&#34;</span>)
+
+active <span style="color:#f92672">=</span> True
+num <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+<span style="color:#66d9ef">while</span> True:
+    user_tickets <span style="color:#f92672">=</span> random_game()
+    <span style="color:#75715e">#print(f&#34;The user tickets is {user_tickets}.&#34;)</span>
+    num <span style="color:#f92672">=</span> num <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+    <span style="color:#66d9ef">for</span> value <span style="color:#f92672">in</span> user_tickets:
+        <span style="color:#66d9ef">if</span> value <span style="color:#f92672">in</span> winner_tickets:
+            <span style="color:#66d9ef">break</span>
+<span style="color:#66d9ef">print</span>(num)
+</code></pre></div><p>當然我的代碼是跑不出結果的。在隨後與兩位大佬們的交流中，以及對這道題的回顧裏我有了一些想法。這道題不能算難題。爲什麽我沒解出來呢，是因爲我真的太蔡了，基礎不夠扎實，還不能很靈活的應用學到的知識。</p>
+<p>這道題在於對隨機的列表的生成和對比。在 Poka 的解法裏，首先使用 <code>choice()</code> 函數在 15 個元素中先挑選 1 個元素通過 <code>append</code> 補充到 <code>winner_tickets</code> 列表中，雖然再重複從這 15 個元素中再抽取一個對象並於已存在與 <code>winner_tickets</code> 中的元素相比對，如果該元素不存在於 <code>winner_tickets</code> 中則 <code>append</code> 到 <code>winner_tickets</code> 中。如此處理直到 <code>winner_tickets</code> 中凑滿 4 個元素。依舊如此處理 <code>user_tickets</code> 列表。獲得兩個列表，即爲得獎的彩票和用戶抽到的彩票，由於題目不要求兩個列表需要順序相同，因此使用 score() 對 <code>user_tickets</code> 和 <code>winner_tickets</code>中的元素進行排序后相比對。如果排序後兩個列表相同，則視為中獎。用 <code>while</code> 設置 <code>user_tickets</code> 生成并於 <code>winner_tickets</code> 比對的循環，並計數。當比對成功后，輸入計數和相關結果。</p>
+<p>在 Jam 的解法裏，引入了模塊 <code>typing</code>：</p>
+<blockquote>
+<p>Introduced since Python 3.5, Python&rsquo;s typing module attempts to provide a way of hinting types to help static type checkers and linters accurately predict errors.</p>
+<p>Due to Python having to determine the type of objects during run-time, it sometimes gets very hard for developers to find out what exactly is going on in the code.</p>
+<p>Even external type checkers like PyCharm IDE do not produce the best results; on average only predicting errors correctly about 50% of the time, according to this answer on StackOverflow.</p>
+<p>Python attempts to mitigate this problem by introducing what is known as type hinting (type annotation) to help external type checkers identify any errors. This is a good way for the programmer to hint the type of the object(s) being used, during compilation time itself and ensure that the type checkers work correctly.</p>
+<p>This makes Python code much more readable and robust as well, to other readers!</p>
+<p><em>&ndash; From <a href="https://www.journaldev.com/34519/python-typing-module">https://www.journaldev.com/34519/python-typing-module</a></em></p>
+</blockquote>
+<p>使用 <code>typing</code> 模塊，可使代碼有更好的 readibility，也便於查錯。在隨機挑選元素的過程中，Jam 選擇了 <code>sample()</code> 函數：</p>
+<blockquote>
+<p>The sample() method returns a list with a randomly selection of a specified number of items from a sequnce.</p>
+</blockquote>
+<p><code>sample()</code> 相比於之前使用的 <code>choice()</code> 更加簡便，寫起來也有著更少的步驟。<code>sample()</code> 提供了<a href="https://docs.python.org/3/library/random.html#random.sample">隨機采樣</a>，得到的結果可能包含重複的元素，但由於在 <code>def</code> 中使用了 <code>-&gt; Set</code>，則 <code>random_game()</code> 得到的是一個集合，不會包含重複元素。</p>
+<p>搞定了隨機生成接下來就是 <code>user_tickets</code> 和 <code>winner_tickets</code> 的比較了。由於 <code>winner_tickets</code> 和 <code>winner_tickets</code> 均是受 <code>set()</code> 處理的集合，因此可以直接比較：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> user_tickets <span style="color:#f92672">==</span> winner_tickets:
+</code></pre></div><p>輕鬆解決。由於在這道題目裏面不在意順序，只在意裏面有沒有，使用 <code>list</code> 肯定不是最好的選擇。</p>
+<p>比較 list 通常的兩種方法，一種是 <code>for</code> 輪詢，另一種就是 Poka 使用的 <code>sort()</code> 先排序后比對。如果使用輪詢就需要遍歷一次和比較四次才能獲取兩者是否相同，這並不是個高效的方案。如果 <code>num</code> 更大，則顯然需要更多的時間來進行比對。如果使用 <code>sort()</code> 排序，則在時間複雜度上是非常低效的，尤其在 <code>num</code> 巨大、元素複雜時。那麽在那麽就可以直接采用 <code>set</code> 的方式，用集合來存儲數據，可以高效的進行比對。Jam 在這裏提到了一個<a href="https://www.jianshu.com/p/a8fa3d31aa40">時間複雜度</a>的概念，我目前還沒看懂。基本邏輯是，<code>set</code> 在 Python 内部實現是 <code>dict</code>，而 <code>dict</code> 的效率要高於 <code>list</code>。</p>
+<p><img src="https://i.loli.net/2021/01/22/MaYHjJunbP7XBq1.png" alt=""></p>
+<p>那麽，如何寫出優雅的代碼？把握代碼的性能和運行時間，占用 CPU，以及使用内存，還有可讀性、延展性，最後閲讀者會感嘆一句，“真優雅！”。當然這一切的前提是寫了大量的不優雅的代碼，看過無數的 sample，和持續的思考。Jam 使用的方法和提到的概念，是我不曾接觸過的。爲什麽學 Python 呢？我期待將編程和醫學結合起來，嘗試能不能用編程來對付那些重複勞動，和給我帶來更多的東西。對於編程，我甚至現在覺得一切技能都是基礎，除了思考。長路漫漫。</p>
+<blockquote>
+<p>“The most important thing you&rsquo;ll learn through out the three years is how to use google.&quot;</p>
+<p><em>&ndash; From Poka&rsquo;s lecturer</em></p>
+</blockquote>
+<p>作爲一個初學者，我定這篇水文題目《小議程序的優雅》肯定是大了。我目前沒有能力來議論什麽是優雅的代碼，但我慶幸能遇到一些熱心的大佬，也很想知道未來的我看到現在的我寫下的代碼的心情除了“幼稚”和一絲惡心之外還有什麽。可能未來我也有能力寫一手優雅的代碼吧。</p>
+<p>正如 Python 之禪裏說的：</p>
+<blockquote>
+<p>Beautiful is better than ugly.
+優美優於醜陋，</p>
+<p>Explicit is better than implicit.
+明瞭優於隱晦；</p>
+<p>Simple is better than complex.
+簡單優於複雜，</p>
+<p>Complex is better than complicated.
+複雜優於凌亂，</p>
+<p>Flat is better than nested.
+扁平優於嵌套，</p>
+<p>Sparse is better than dense.
+稀疏優於稠密，</p>
+<p>Readability counts.
+可讀性很重要！</p>
+<p>……</p>
+</blockquote>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/python/" rel="tag">Python</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/2021/01/a-crash-course-in-python/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">Python 速成</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 by Miao with Love.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

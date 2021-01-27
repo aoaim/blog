@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Miaonote</title>
+    <link>https://miaom.uk/categories/</link>
+    <description>Recent content in Categories on Miaonote</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 21 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://miaom.uk/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>興趣學習</title>
+      <link>https://miaom.uk/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/</link>
+      <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://miaom.uk/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
