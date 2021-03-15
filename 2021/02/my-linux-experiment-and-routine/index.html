@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>轉向物理機 Linux，這是我的嘗試和日常？ - Miaonote</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="轉向物理機 Linux，這是我的嘗試和日常？" />
+<meta property="og:description" content="關於如何安裝/美化 Linux 的教程和文章已經層出不窮，但這類文章似乎一直只儅 Linux 是個新玩具，就和一衆如何安裝 WordPress、Hexo 等博客的文章一樣，只停留在“安裝”這個折騰過程中的“樂趣”上。然而“折騰”的意義始終是有限的，安裝博客的目的應當是爲了寫博文，安裝 Linux 的目的應當是用 Linux，重複一邊又一遍的安裝過程那是在浪費生命。在過去的兩年裏，我一直嘗試在真實環境中使用 Linux Desktop。在這篇文章中，我也嘗試談一談該如何在真實環境中使用 Linux Desktop。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/2021/02/my-linux-experiment-and-routine/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-02-07T08:39:41&#43;08:00" />
+<meta property="article:modified_time" content="2021-02-07T08:39:41&#43;08:00" />
+
+
+		<meta itemprop="name" content="轉向物理機 Linux，這是我的嘗試和日常？">
+<meta itemprop="description" content="關於如何安裝/美化 Linux 的教程和文章已經層出不窮，但這類文章似乎一直只儅 Linux 是個新玩具，就和一衆如何安裝 WordPress、Hexo 等博客的文章一樣，只停留在“安裝”這個折騰過程中的“樂趣”上。然而“折騰”的意義始終是有限的，安裝博客的目的應當是爲了寫博文，安裝 Linux 的目的應當是用 Linux，重複一邊又一遍的安裝過程那是在浪費生命。在過去的兩年裏，我一直嘗試在真實環境中使用 Linux Desktop。在這篇文章中，我也嘗試談一談該如何在真實環境中使用 Linux Desktop。"><meta itemprop="datePublished" content="2021-02-07T08:39:41&#43;08:00" />
+<meta itemprop="dateModified" content="2021-02-07T08:39:41&#43;08:00" />
+<meta itemprop="wordCount" content="699">
+<meta itemprop="keywords" content="Linux," />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="/" title="Miaonote" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="/img/cat.png">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">Miaonote</div>
+					<div class="logo__tagline">你得夢想是世界上最偉大的事</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">
+				
+				<span class="menu__text">About</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/links/">
+				
+				<span class="menu__text">Links</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">轉向物理機 Linux，這是我的嘗試和日常？</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-02-07T08:39:41&#43;08:00">02-07-2021</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/" rel="category">興趣學習</a>
+	</span>
+</div></div>
+		</header><div class="content post__content clearfix">
+			<p>關於如何安裝/美化 Linux 的教程和文章已經層出不窮，但這類文章似乎一直只儅 Linux 是個新玩具，就和一衆如何安裝 WordPress、Hexo 等博客的文章一樣，只停留在“安裝”這個折騰過程中的“樂趣”上。然而“折騰”的意義始終是有限的，安裝博客的目的應當是爲了寫博文，安裝 Linux 的目的應當是用 Linux，重複一邊又一遍的安裝過程那是在浪費生命。在過去的兩年裏，我一直嘗試在真實環境中使用 Linux Desktop。在這篇文章中，我也嘗試談一談該如何在真實環境中使用 Linux Desktop。</p>
+<h2 id="什麽是-linux">什麽是 Linux？</h2>
+<p>Linux 是一個基於 Linux kernel 的類 Unix 操作系統的統稱。Linux kernel 是一個采取 GPLv2 的操作系統内核，它的第一個版本由 22 嵗的芬蘭赫爾辛基大學學生 Linus Torvalds 于 1991 年 8 月 25 日在網路上發佈。Linux kernel 的思想源於 Unix，但 Linux kernel 不源於任何版本的 Unix 的源代碼。Linux kernel 與 GUN 套件、應用程序組合構成了我們現在見到的 Ubuntu、Debian 等 Linux 發行版。</p>
+<h2 id="爲什麽是-linux">爲什麽是 Linux？</h2>
+<p>好吧我承認，最初用 Linux Desktop 的原因是我的 Mac 壞掉了又沒足夠的錢錢買新的。事實證明，Linux Desktop 真讓我找回了部分 Mac 的體驗，畢竟 macOS 基於 Unix。</p>
+<p>由於我原先使用老乞丐版 Mac 似乎不太能滿足我的日常需求了，假期回家後我便將 Mac 換成了老爸的聯想小新。雖說這臺聯想小新屏幕更差，還有點傻大粗，但好在也有 SSD，速度不成文，還有足夠的機械硬盤，滿足我的儲存需求。內存不大但可以擴展，我加上了一根 8G 的內存條，組成了非對稱的雙通道。總的來說這比我之前的 Mac 使用體驗要好得多。</p>
+<p>但使用 Windows 時我遇到了一些問題。對於垃圾軟件和廣告彈窗我倒沒遇到，因爲我的使用習慣一向還算謹慎，但對於一些常用的國產軟件，我總是對他們沒辦法，尤其是它們總在大搖大擺的掃描我的硬盤。一次偶然的機會我瞭解到了 Manjaro 這一 Arch 系的發行版，我便走上了 Linux 之路，並沉迷上了 Linux。</p>
+<p>Linux 對編程學習者/開發者十分友好。僅在我目前所學的 Python 和 R 的實踐中，在 Linux 上進行相關配置要比在 Windows 上順暢很多。</p>
+<p>Linux 對硬件的要求較低。即便設備上沒有 SSD，也不用擔心 Linux 會像 Windows 10 一樣卡得不能自已。即使是在老爺機上，Linux 仍可運行，并能用它幹點什麽事情。</p>
+<h2 id="選擇-linux-之前的準備工作有哪些">選擇 Linux 之前的準備工作有哪些？</h2>
+<p>帶上腦子，保持網絡，有查資料的意識，即可。另外，建議安裝英文版系統，防止以後出現奇奇怪怪的問題。</p>
+<h2 id="選擇哪個發行版和桌面環境">選擇哪個發行版和桌面環境？</h2>
+<p>對發行版和桌面環境的選擇是充滿個人主觀的判斷。在中國大陸，可能最出名的 Linux 發行版就是 Ubuntu 了，這是一個非常優秀的發行版。除了 Ubuntu，還有許多其他其他的發行版：</p>
+<p>商業發行版：</p>
+<ul>
+<li>基於 Dpkg 包格式：
+<ul>
+<li>Ubuntu（由英國 Canonical Ltd. 主導開發發行）</li>
+</ul>
+</li>
+<li>基於 RPM 包格式：
+<ul>
+<li>Red Hat Enterprise Linux，RHEL（由美國 Red Hat, Inc. 主導開發發行）</li>
+<li>SUSE Linux Enterprise（源於德國，現屬美國 Novell, Inc. 旗下）</li>
+</ul>
+</li>
+</ul>
+<p>自由社區驅動發行版：</p>
+<ul>
+<li>基於 Dpkg 包格式：
+<ul>
+<li>Debian</li>
+<li>Deepin</li>
+<li>……</li>
+</ul>
+</li>
+<li>基於 RPM 包格式：
+<ul>
+<li>Fodera</li>
+<li>CentOS</li>
+<li>Scientific Linux</li>
+<li>……</li>
+</ul>
+</li>
+<li>其他包格式：
+<ul>
+<li>Arch</li>
+<li>Manjaro</li>
+<li>Gentoo</li>
+<li>Alpine</li>
+<li>……</li>
+</ul>
+</li>
+</ul>
+<p>在親手扼殺 CentOS Linux  后，Red Hat 在 2021 年 1 月 20 日宣佈了面對個人開發者和小企業的<a href="https://www.redhat.com/en/blog/new-year-new-red-hat-enterprise-linux-programs-easier-ways-access-rhel">無成本和低成本 RHEL 計劃</a>。這意味著個人可以免費使用企業級發行版 RHEL，限制是運行 RHEL 的設備不得超過 16 台。RHEL 是非常優秀的 Linux 發行版，也比較適合桌面使用。對於我，我的主力操作系統是 openSUSE，RHEL 作爲測試系統活在我的虛擬機裏。</p>
+<p>越來越多發行版的預設桌面環境是 Gnome。如果可選其他桌面環境，挑選一個看得順眼的桌面環境即可。常見的桌面環境有：</p>
+<ul>
+<li>Cinnamon</li>
+<li>DDE （Deepin、UOS 的默認桌面環境）</li>
+<li>GNOME （Ubuntu、Fedora、RHEL 等的默認桌面環境）</li>
+<li>KDE Plasma （openSUSE 的默認桌面環境）</li>
+<li>MATE</li>
+<li>Xfce</li>
+<li>……</li>
+</ul>
+<h2 id="滾動發行版還是穩定發行版">滾動發行版還是穩定發行版？</h2>
+<p>這也是一個充滿主顧的判斷。滾動發行版如 Arch 更新更頻繁，在滾動的更新模式下軟件的更新是連續推出，而非分批的版本。由於更新策略比較激進，用戶可以在第一時間嚐鮮上游推送的功能性更新，但導致可能帶來的穩定性問題，雖然現在滾動版也已經很穩定了。</p>
+<p>OK，以上的各種選擇其實都不重要。對 Linux 的介紹結束。如果是第一次接觸使用 Linux 桌面版，可以先從 Ubuntu、Deepin/UOS 開始，但隨着使用深入你會發現各個發行版之間大同小異，對發行版的選擇最後幾乎成爲了信仰之爭。OK，讓我們開始使用 Linux Desktop 吧。</p>
+<h2 id="軟件源的管理和更新">軟件源的管理和更新</h2>
+<p>使用操作系統當然離不開軟件。在使用 Windows 和 macOS 的時候，我們習慣於通過應用商店和開發商的官方網站下載軟件。Linux 也是類似，它有默認的基本源&ndash;類似與官方的應用商店，也有第三方源&ndash;類似於第三方的應用商店。但與 Windows 和 macOS 又不同，在 Linux 上官方的基本源軟件是相對比較少的，即第三方源裏的軟件通常是不會出現在官方源内的。以 openSUSE 爲例，受版權問題影響，媒體解碼器是不包含在官方默認源裏面，如果需要播放音視頻等，則需要通過第三方源 packman 來安裝相應的解碼器。</p>
+<p>受特殊網路環境的影響，在中國大陸通常是無法直接連接到官方源的下載服務器。這個時候就需要借助於鏡像源&ndash;在中國大陸，比較知名的有由清華大學、中國科學技術大學等高校計算機愛好者協會和華爲、阿里巴巴等企業維護的鏡像源。鏡像源會盡量與官方源保持同步，但不可避免地稍微滯後于官方源。如何設置鏡像源，在這裏不再贅述。</p>
+<p>Packman 為 openSUSE 提供了各種其他軟件包，尤其是但不限於與 openSUSE Build Service 應用程序黑名單中與多媒體相關的應用程序和庫。它是 openSUSE 軟件包的最大外部存儲庫。對於 openSUSE，通常需要開啓 packman 和 M17N_Fonts 源：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo zypper ar -cfp <span style="color:#ae81ff">90</span> https://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/ packman
+
+sudo zypper ar -cfp <span style="color:#ae81ff">90</span>  https://download.opensuse.org/repositories/M17N:/fonts/openSUSE_Tumbleweed/ M17N_Fonts
+
+sudo zypper dup --from packman --allow-vendor-change
+</code></pre></div><p>可以在<a href="https://en.opensuse.org/Additional_package_repositories">這裏</a>查詢更多關於 openSUSE 的外部源的信息。</p>
+<p>在 RHEL 上，通常使用的軟件源有 EPEL、Remi Repo 和 RPM Fusion。可以通過這個命令開查看當前啓用的源：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo yum repolist
+</code></pre></div><p>EPEL 全稱 Extra Packages for Enterprise Linux，由 Fedora 社區維護，是一個為 RHEL 及衍生發行版提供高質量軟件包的項目。在命令行以 root 用戶中輸入如下命令<a href="https://fedoraproject.org/wiki/EPEL">安裝并啓用</a> EPEL：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dnf install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+</code></pre></div><p>EPEL 部分包的依賴可能來源于 Codeready Bulider，因此也需要啓用 Codeready Bulider 源：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo subscription-manager repos --enable <span style="color:#e6db74">&#34;codeready-builder-for-rhel-8-*-rpms&#34;</span>
+</code></pre></div><p>此處可能會出現報錯，如：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Errors during downloading metadata <span style="color:#66d9ef">for</span> repository <span style="color:#e6db74">&#39;codeready-builder-for-rhel-8-x86_64-eus-rpms&#39;</span>:
+  - Status code: <span style="color:#ae81ff">404</span> <span style="color:#66d9ef">for</span> https://cdn.redhat.com/content/eus/rhel8/8/x86_64/codeready-builder/os/repodata/repomd.xml <span style="color:#f92672">(</span>IP: 96.17.0.251<span style="color:#f92672">)</span>
+Error: Failed to download metadata <span style="color:#66d9ef">for</span> repo <span style="color:#e6db74">&#39;codeready-builder-for-rhel-8-x86_64-eus-rpms&#39;</span>: Cannot download repomd.xml: Cannot download repodata/repomd.xml: All mirrors were tried
+</code></pre></div><p>Red Hat 對這個問題有一個<a href="https://access.redhat.com/solutions/4762961">説明</a>，是因爲沒有 <code>8</code> 版本的 EUS Repo。可通過指定當前系統版本的方法解決：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">subscription-manager release --set<span style="color:#f92672">=</span>8.2 <span style="color:#75715e"># 此處爲系統版本， 選擇 8.1、8.2、8.4、8.6 或 8.8</span>
+
+<span style="color:#75715e"># 清除安裝源緩存</span>
+sudo dnf clean all
+sudo rm -r /var/cache/dnf
+sudo dnf upgrade
+</code></pre></div><p>也可直接禁用 EUS Repo：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">subscription-manager repos --disable<span style="color:#f92672">=</span>rhel-8-for-x86_64-baseos-eus-source-rpms
+subscription-manager repos --disable<span style="color:#f92672">=</span>codeready-builder-for-rhel-8-x86_64-eus-source-rpms
+subscription-manager repos --disable<span style="color:#f92672">=</span>codeready-builder-for-rhel-8-x86_64-eus-rpms
+subscription-manager repos --disable<span style="color:#f92672">=</span>codeready-builder-for-rhel-8-x86_64-eus-debug-rpms
+
+<span style="color:#75715e"># 清除安裝源緩存</span>
+sudo dnf clean all
+sudo rm -r /var/cache/dnf
+sudo dnf upgrade
+</code></pre></div><p>Remi Repo 是由法國人 Remi Collect 創建和維護的第三方源，其目的是為 RHEL 及其衍生發行版提供最新版的 PHP 和其他軟件包。在命令行以 root 用戶中輸入如下命令<a href="https://blog.remirepo.net/post/2019/05/07/RHEL-8-repository">安裝并啓用</a> Remi Repo：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo dnf install https://rpms.remirepo.net/enterprise/remi-release-8.rpm
+</code></pre></div><p>RPM Fusion 提供一些由於法律問題 Fodera 和 Red  Hat 不願意提供的包，它由社區維護。在命令行以 root 用戶中輸入如下命令<a href="https://rpmfusion.org/Configuration/">安裝并啓用</a> RPM Fusion：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dnf install --nogpgcheck https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+sudo dnf install --nogpgcheck https://mirrors.rpmfusion.org/free/el/rpmfusion-free-release-8.noarch.rpm https://mirrors.rpmfusion.org/nonfree/el/rpmfusion-nonfree-release-8.noarch.rpm
+</code></pre></div><p>至此，軟件源的安裝已經完成。如果需要禁用某個源，可以使用 <code>subscription-manager repos --disable=</code> 命令。</p>
+<p>源安裝完畢后，使用如下命令更新系統軟件：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo yum update
+</code></pre></div><p>各個發行版的源安裝命令一般不相同，但理念類似；總之源爲發行版提供更多的可用軟件，在某些發行版上這些軟件可能是官方不方便提供的。</p>
+<p>如果你依舊不太明白您當前使用的發行版的源的設置方法，你可以在<a href="http://www.google.com">這裏</a>獲取關於任何發行版的任何信息。</p>
+<h2 id="通過網站下載安裝包">通過網站下載安裝包</h2>
+<p>如同 Windows 和 macOS，在 Linux 上安裝軟件并非只有通過源一條途徑。許許多多的軟件如 VS Code 在其官方網站中提供了安裝包的<a href="https://code.visualstudio.com/">下載途徑</a>。下載前注意分辨將要下載的安裝包是否符合當前使用系統的包管理器。</p>
+<p>對於 RHEL 安裝包下載完畢后，執行如下命令安裝本地的安裝包：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo dnf install path_to_rpm.rpm <span style="color:#75715e"># 安裝包的本地路徑，或者安裝包的下載鏈接</span>
+</code></pre></div><p>如果是在 openSUSE 上，則是：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo zypper install path_to_rpm.rpm
+</code></pre></div><p>在 2021 年的今天，不少國內的服務都逐漸有了 Linux 版本，如<a href="https://music.163.com/#/download">網易雲音樂</a>、<a href="https://pan.baidu.com/download">百度網盤</a>、<a href="https://pinyin.sogou.com/linux/?r=pinyin">搜狗輸入法</a>、甚至還有<a href="https://aur.archlinux.org/packages/wechat-uos/">微信</a>。</p>
+<h2 id="通過-flatpak-和-snapcraft-下載安裝軟件">通過 Flatpak 和 Snapcraft 下載安裝軟件</h2>
+<p><a href="https://flatpak.org/">Flatpak</a> 和 <a href="https://snapcraft.io/">Snapcraft</a> 分別是由 Red Hat 和 Canonical（Ubuntu 母公司） 主推的新一代 Linux App 打包方式。使用這種打包方式的軟件運行在沙箱內，在多個不同的發行版中通常可獲得一致的使用體驗，也通常不需要擔心缺失依賴。Snapcraft 中提供了更多的軟件。如何使用 Flatpak 和 Snapcraft，可以參考這兩個項目的官方網站。</p>
+<p>直到這裏，Linux 下可用的軟件已經相當多了，基本滿足了日常的工作需要。如果不得不用 Windows 下獨有的一些軟件，也不是沒有辦法。甚至還可以使用 <a href="https://www.virtualbox.org/wiki/Downloads">VirtualBox</a> 或 <a href="https://www.vmware.com/products/workstation-player/workstation-player-evaluation.html">VMware Workstation Player</a> 來虛擬一個 Windows 環境。</p>
+<p>重複一下上面的觀點，各個 Linux 發行版大同小異，對於絕大部分桌面使用者而言它們的區別甚至可能只是包管理器不同。只要善於查詢資料，Linux 很容易玩轉。</p>
+<h2 id="軟件的管理卸載和更新">軟件的管理、卸載和更新</h2>
+<p>通常需要先瞭解一下當前使用發行版的包管理器。以 RHEL 爲例，則需要先簡要瞭解 <code>dnf</code> 和 <code>yum</code>。<code>dnf (Dandified Yum)</code> 和 <code>yum (Yellowdog Updater, Modified)</code> 同爲 <code>RPM</code> 發行版軟件包管理器，由於諸多優勢和新特性，<code>dnf</code> 正逐漸取代 <code>yum</code>。</p>
+<p>通過 dnf 可以很方便的管理、卸載和更新當前系統中的軟件包。dnf 的<a href="https://dnf.readthedocs.io/en/latest/command_ref.html">相關命令</a>有：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">dnf <span style="color:#f92672">[</span>options<span style="color:#f92672">]</span> &lt;command&gt; <span style="color:#f92672">[</span>&lt;args&gt;...<span style="color:#f92672">]</span>
+
+Commands:
+	autoremove <span style="color:#75715e"># 移除系統不再需要的依賴</span>
+	clean <span style="color:#75715e"># 清除一些臨時文件</span>
+		clean dbcache
+		clean expire-cache
+		clean metadata
+		clean package
+		clean all
+	install &lt;spec&gt; <span style="color:#75715e"># 安裝包，install/localinstall/-i 后接包名</span>
+	list <span style="color:#75715e"># 根據軟件包與系統的關係來打印軟件包列表</span>
+		list --installed
+		list --autoremove
+</code></pre></div><h2 id="在日常的學習和工作中需要用哪些軟件">在日常的學習和工作中需要用哪些軟件？</h2>
+<p>通過以上的設置，我們已經可以在 Linux 中安裝和使用相當多的軟件了。我通常使用如下軟件：</p>
+<ul>
+<li>VS Code：整個系統中使用最頻繁的軟件。寫代碼，寫筆記，都用它。</li>
+<li>Firefox：幾乎預裝載所有的 Linux 發行版桌面環境中，自由而强大的網絡瀏覽器。</li>
+<li><a href="https://docs.fedoraproject.org/en-US/quick-docs/installing-spotify/">Spotify</a>：對 Linux 比較友好的流媒體播放器。同樣對 Linux 比較友好的還有網易雲音樂。</li>
+<li>WPS Office：Linux 上 Microsoft Office 的替代品。同類型的還有OnlyOffice、<a href="https://www.yozosoft.com/product-officelinux.html">永中 Office</a>，Libreoffice，OnlyOffice，Apache OpenOffice。</li>
+<li>Zotero：開源的多平臺文獻管理軟件。同樣支持 Linux 平臺的文獻管理軟件還有 Mendeley。</li>
+<li>Joplin：開源的全平臺 Markdown 筆記軟件，可以設置 OneDrive 等雲服務。</li>
+<li>GIMP：免費的 Photoshop 開源替代品，功能强大。</li>
+<li>Flameshot：Linux 上的截圖軟件。</li>
+<li>Mailspring：Linux 下相當不錯且易用的郵箱客戶端。</li>
+<li>&hellip;&hellip;</li>
+</ul>
+<p>除了這些軟件，Linux 下還有很多非常實用的命令行小工具。如果找不到趁手的工具，甚至可以看看 Shell 語法照葫蘆畫瓢手糊一個脚本。如果有需要長期運行的程序，比如抓取數據等，我會寫好脚本，讓它在我的雲服務器中運行。</p>
+<h2 id="我一整天的在-linux-上的工作和學習流程是什麼樣的">我一整天的在 Linux 上的工作和學習流程是什麼樣的？</h2>
+<p>早晨醒來打開電腦，我會先打開 <a href="https://todoist.com/downloads/linux">Todoist</a> 中查看昨晚添加的今日計劃，以及增添今天的新計劃。通常，我會在上午閱讀英文文獻和完成幾篇閱讀理解。</p>
+<p>我的需要閱讀和參考的文獻以 PDF 格式整理保存在 <a href="https://www.zotero.org/download/">Zotero</a> 中。如果需要在 PDF 中進行標註，我會使用 <a href="http://linux.wps.com">WPS</a>。我使用 <a href="https://vivaldi.com/download">Vivald</a> 在 <a href="https://newsela.com">Newsela</a> 網站完成閱讀理解任務。難免會遇到不認識的單詞，我使用 GoldenDict 中導入的詞典來查詢單詞，也會直接通過網頁的 Google Translate 來進行翻譯理解。登錄網頁需要輸入帳號密碼，除了使用密碼管理器插件，我還使用 <a href="https://1password.com/downloads/linux/">1Password</a>。</p>
+<p>如果我需要進行一些簡單的文檔處理任務，我會使用 WPS。但在大部分文字編輯任務，我在 <a href="https://code.visualstudio.com/download">VSCode</a> 中配合插件來使用 Markdown 來書寫文字。在想到一些好點子的時候，我會將它記錄到 <a href="https://joplinapp.org">Joplin</a> 雲筆記。</p>
+<p>小憩一會兒，我會打開 <a href="https://flathub.org/apps/details/com.spotify.Client">Spotify</a> 或者 <a href="https://github.com/ZetaoYang/netease-cloud-music-appimage">網易雲音樂</a> 聽聽歌。</p>
+<p>我通常在中午來處理件。我會打開 <a href="https://getmailspring.com/download">Mailspring</a> 來回覆或者是歸檔、刪除郵件。</p>
+<p>電腦上打字比手機肯定更方便，所以也會把 <a href="https://github.com/SilbePfeile/wechat-uos-makefile">微信</a> 掛在後臺。雖然是網頁套殼，但也夠用。</p>
+<p>這是一個普通學生的生活，在這樣的生活裏使用 Linux 我沒有感覺到任何不便。甚至因爲更加純粹的系統環境，能受到更少的打擾。對於大部分人，我想這已經夠了。所以，不要讓 Linux 停留在虛擬機裏，時不時打開觀賞一番再關機；大可以深入體驗一番，嘗試作爲日常使用的操作系統，去慢慢的適應它。</p>
+<h2 id="說了這麼多爲什麼不用-mac">說了這麼多，爲什麼不用 Mac？</h2>
+<p>我沒錢。</p>
+<h2 id="使用-linux-之後我有什麽改變">使用 Linux 之後我有什麽改變</h2>
+<p>Linux 是個自由的操作系統，也意味著它可能不開箱即用。在使用 Linux 作爲主力操作系統后，我養成了看官方文檔和有效利用搜索引擎的良好習慣，同時也鍛煉了英語能力。</p>
+<p>我儘量在命令行裏操作，我學會了在每一步操作前思考 &ndash; 我這步操作的目的是什麼？我這步操作可能會來代什麼後果？如果出現錯誤我該如何盡力撤回這步操作？</p>
+<p>我不再為系統垃圾文件煩惱，也再也沒有廣告彈窗，也不會有使用時突然的系統更新。寫代碼也也得格外順心，不用煩惱環境配置的種種麻煩，配合自己寫的小脚本系統使用效率也大大提高。</p>
+<p>上手 Linux 不難，軟件數量也不是問題。只要學習一點點 Linux 的基本命令行操作，加上一點點好奇心和耐心，就足夠上手使用 Linux 了，并將它用到自己的學習和工作中。一旦熟悉了 Linux，即可向高級用戶的目標進發，創造屬於自己的工具。</p>
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/linux/" rel="tag">Linux</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="/2021/01/how-to-use-conda/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">如何使用 Conda？</p>
+		</a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 Miao.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+<script src="/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

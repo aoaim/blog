@@ -2,35 +2,35 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Miaonote</title>
-    <link>https://miaom.uk/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on Miaonote</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jan 2021 19:48:41 +0800</lastBuildDate><atom:link href="https://miaom.uk/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 07 Feb 2021 08:39:41 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python</title>
-      <link>https://miaom.uk/tags/python/</link>
-      <pubDate>Wed, 27 Jan 2021 19:48:41 +0800</pubDate>
+      <title>Linux</title>
+      <link>/tags/linux/</link>
+      <pubDate>Sun, 07 Feb 2021 08:39:41 +0800</pubDate>
       
-      <guid>https://miaom.uk/tags/python/</guid>
+      <guid>/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Linux</title>
-      <link>https://miaom.uk/tags/linux/</link>
-      <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Wed, 27 Jan 2021 19:48:41 +0800</pubDate>
       
-      <guid>https://miaom.uk/tags/linux/</guid>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>GTD</title>
-      <link>https://miaom.uk/tags/gtd/</link>
+      <link>/tags/gtd/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/tags/gtd/</guid>
+      <guid>/tags/gtd/</guid>
       <description></description>
     </item>
     

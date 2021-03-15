@@ -10,20 +10,16 @@
 		<meta property="og:title" content="Seafile Pro 7.x 安裝和使用遇到的問題" />
 <meta property="og:description" content="一直想要一個私人的雲存儲，目前主流解決方案都無法滿足我隨時隨地登陸使用和數據自有的需求。經過對比幾個開源雲存儲解決方案，我最終選擇了中國大陸團隊開發的 Seafile。在安裝和使用 Seafile 的過程中不可避免的遇到了一些問題，本着 儘量不使用一鍵腳本 和 儘量搞懂每條命令背後作用 的初衷，將我個人的搭建過程和遇到的問題及解決方法記錄如下，以供日後參考和學習。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://miaom.uk/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/" />
-<meta property="article:published_time" content="2020-10-16T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-10-16T00:00:00+00:00" />
+<meta property="og:url" content="/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2020-10-16T00:00:00&#43;00:00" />
+<meta property="article:modified_time" content="2020-10-16T00:00:00&#43;00:00" />
+
 
 		<meta itemprop="name" content="Seafile Pro 7.x 安裝和使用遇到的問題">
-<meta itemprop="description" content="一直想要一個私人的雲存儲，目前主流解決方案都無法滿足我隨時隨地登陸使用和數據自有的需求。經過對比幾個開源雲存儲解決方案，我最終選擇了中國大陸團隊開發的 Seafile。在安裝和使用 Seafile 的過程中不可避免的遇到了一些問題，本着 儘量不使用一鍵腳本 和 儘量搞懂每條命令背後作用 的初衷，將我個人的搭建過程和遇到的問題及解決方法記錄如下，以供日後參考和學習。">
-<meta itemprop="datePublished" content="2020-10-16T00:00:00+00:00" />
-<meta itemprop="dateModified" content="2020-10-16T00:00:00+00:00" />
-<meta itemprop="wordCount" content="430">
-
-
-
+<meta itemprop="description" content="一直想要一個私人的雲存儲，目前主流解決方案都無法滿足我隨時隨地登陸使用和數據自有的需求。經過對比幾個開源雲存儲解決方案，我最終選擇了中國大陸團隊開發的 Seafile。在安裝和使用 Seafile 的過程中不可避免的遇到了一些問題，本着 儘量不使用一鍵腳本 和 儘量搞懂每條命令背後作用 的初衷，將我個人的搭建過程和遇到的問題及解決方法記錄如下，以供日後參考和學習。"><meta itemprop="datePublished" content="2020-10-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-10-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="428">
 <meta itemprop="keywords" content="Linux," />
-
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -43,10 +39,10 @@
 	<div class="logo logo--mixed">
 		<a class="logo__link" href="/" title="Miaonote" rel="home">
 			<div class="logo__item logo__imagebox">
-					<img class="logo__img" src="/img/cat.svg">
+					<img class="logo__img" src="/img/cat.png">
 				</div><div class="logo__item logo__text">
 					<div class="logo__title">Miaonote</div>
-					<div class="logo__tagline">你的夢想是世界上最偉大的事</div>
+					<div class="logo__tagline">你得夢想是世界上最偉大的事</div>
 				</div>
 		</a>
 	</div>
@@ -84,7 +80,7 @@
 			<h1 class="post__title">Seafile Pro 7.x 安裝和使用遇到的問題</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-16T00:00:00Z">2020-10-16</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/" rel="category">興趣學習</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-10-16T00:00:00Z">10-16-2020</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/" rel="category">興趣學習</a>
 	</span>
 </div></div>
 		</header>
@@ -102,45 +98,44 @@
   </ul>
 </nav>
 	</div>
-</div>
-<div class="content post__content clearfix">
+</div><div class="content post__content clearfix">
 			<p>一直想要一個私人的雲存儲，目前主流解決方案都無法滿足我隨時隨地登陸使用和數據自有的需求。經過對比幾個開源雲存儲解決方案，我最終選擇了中國大陸團隊開發的 Seafile。在安裝和使用 Seafile 的過程中不可避免的遇到了一些問題，本着 儘量不使用一鍵腳本 和 儘量搞懂每條命令背後作用 的初衷，將我個人的搭建過程和遇到的問題及解決方法記錄如下，以供日後參考和學習。</p>
 <p>我使用的是一臺配置爲 1C 2G 30M 的騰訊雲 Lighthouse 莫斯科 VPS，操作系統爲 CentOS 8 x86_64。</p>
 <h2 id="step-1-安裝-aapanel-與-lnmp-環境">Step 1 安裝 aaPanel 與 LNMP 環境</h2>
 <p>雖然使用 aaPanel 有悖我 儘量不使用一鍵腳本 的初衷，但是 aaPanel 實在是太方便了（）。</p>
-<pre><code>yum install -y wget &amp;&amp; wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh &amp;&amp; bash install.sh
-</code></pre><p>然後通過 aaPanel 安裝需要的基礎環境：Nginx 1.19.2 + MySQL 5.7.31 + PHP-7.4 + phpMyAdmin 5.0。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install -y wget <span style="color:#f92672">&amp;&amp;</span> wget -O install.sh http://www.aapanel.com/script/install_6.0_en.sh <span style="color:#f92672">&amp;&amp;</span> bash install.sh
+</code></pre></div><p>然後通過 aaPanel 安裝需要的基礎環境：Nginx 1.19.2 + MySQL 5.7.31 + PHP-7.4 + phpMyAdmin 5.0。</p>
 <h2 id="step-2-安裝-java-環境">Step 2 安裝 Java 環境</h2>
 <p>這裏有一個坑。
 從 Seafile Pro 7.0 版本開始 Elasticsearch 更新到了 5.6 版，Elasticsearch 5.6 需要 Java 8 環境。原先安裝的時候按照常規方法安裝 Java 後啓動 Seafile 出現嚴重故障，表現爲 CPU 和 RAM 反覆飈至 100%。查詢資料得知，為了安全起見，Java 8 不能以 root 用戶運行，需要更改啟動 Seafile 的用戶。這個 Java 8 特性的坑 Seafile 文檔暫未標明。</p>
-<pre><code>yum install java-1.8.0-openjdk
-</code></pre><h2 id="step-3-安裝-python-環境">Step 3 安裝 Python 環境</h2>
-<pre><code># on CentOS 8
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">yum install java-1.8.0-openjdk
+</code></pre></div><h2 id="step-3-安裝-python-環境">Step 3 安裝 Python 環境</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># on CentOS 8</span>
 yum install python3 python3-setuptools python3-pip python3-ldap -y
-pip3 install --timeout=3600 Pillow pylibmc captcha jinja2 sqlalchemy psd-tools django-pylibmc django-simple-captcha
-</code></pre><p>這裏又有一坑。
+pip3 install --timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">3600</span> Pillow pylibmc captcha jinja2 sqlalchemy psd-tools django-pylibmc django-simple-captcha
+</code></pre></div><p>這裏又有一坑。
 Centos 8 運行這段命令會報錯，起初我並不明白這段錯誤的原因，看報錯內容以爲是 Python3 和 pip3 的版本問題，嘗試升級 Python3 和 pip3 仍未解決。
 求助大佬，大佬給出的解決方法是：</p>
-<pre><code>vim ~/.pip/pip.conf 
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">vim ~/.pip/pip.conf 
 
-[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-[install]
-trusted-host = https://pypi.tuna.tsinghua.edu.cn 
+<span style="color:#f92672">[</span>global<span style="color:#f92672">]</span>
+index-url <span style="color:#f92672">=</span> https://pypi.tuna.tsinghua.edu.cn/simple
+<span style="color:#f92672">[</span>install<span style="color:#f92672">]</span>
+trusted-host <span style="color:#f92672">=</span> https://pypi.tuna.tsinghua.edu.cn 
 
 curl https://bootstrap.pypa.io/get-pip.py | python3.6
-</code></pre><p>可能是 pip 更新不完全的問題。使用清華源完全更新後不再報錯，成功執行。</p>
+</code></pre></div><p>可能是 pip 更新不完全的問題。使用清華源完全更新後不再報錯，成功執行。</p>
 <h2 id="step-4-安裝-seafile-pro">Step 4 安裝 Seafile Pro</h2>
 <p>這部分參考 Seafile 官方文檔即可，我將 Seafile 安裝至 /opt/seafile 路徑下。</p>
-<pre><code>mkdir /opt/seafile
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir /opt/seafile
 mv seafile-pro-server_* seafile
 cd /opt/seafile
-#将 seafile-pro-server_* 移动到 /opt/seafile 目录下后
+<span style="color:#75715e">#将 seafile-pro-server_* 移动到 /opt/seafile 目录下后</span>
 tar -xzf seafile-pro-server_*
 mkdir installed
 mv seafile-pro-server_* installed
-</code></pre><p>現在，安裝目錄看起來應該像這樣：</p>
-<pre><code># tree . -L 2
+</code></pre></div><p>現在，安裝目錄看起來應該像這樣：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># tree . -L 2</span>
 .
 ├── installed
 │   └── seafile-server_1.4.0_x86-64.tar.gz
@@ -153,63 +148,63 @@ mv seafile-pro-server_* installed
     ├── seahub.sh
     ├── setup-seafile.sh
     └── upgrade
-</code></pre><p>這樣設計目錄的好處在於：</p>
+</code></pre></div><p>這樣設計目錄的好處在於：</p>
 <ul>
 <li>和 seafile 相關的配置文件都放在 seafile 目錄下，便於集中管理。</li>
 <li>後續升級時,你只需要解壓最新的安裝包到 seafile 目錄下。</li>
 </ul>
 <p>受 Java 8 影響，需要新建一個 seafile 或者任何非 root 用戶。</p>
-<pre><code>useradd --system --comment seafile seafile --create-home --home-dir /home/seafile
-</code></pre><p>修改 Seafile 安裝目錄和 Seafile data 目錄的屬主和屬組為 seafile</p>
-<pre><code>cd
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">useradd --system --comment seafile seafile --create-home --home-dir /home/seafile
+</code></pre></div><p>修改 Seafile 安裝目錄和 Seafile data 目錄的屬主和屬組為 seafile</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd
 chown -R seafile:seafile /opt/seafile
-</code></pre><p>切換爲 seafile 用戶</p>
-<pre><code>&lt;pre class=&quot;wp-block-syntaxhighlighter-code&quot;&gt;su - seafile
+</code></pre></div><p>切換爲 seafile 用戶</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">su - seafile
 cd /opt/seafile
-</code></pre><pre><code>&lt;pre class=&quot;wp-block-syntaxhighlighter-code&quot;&gt;cd seafile-pro-server-*
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd seafile-pro-server-*
 ./setup-seafile-mysql.sh
-</code></pre><p>運行安裝腳本並回答預設問題。在 seafile-server-latest 目錄下：</p>
-<pre><code>./seafile.sh start # 啟動 Seafile 服務
-./seahub.sh start # 啟動 Seahub 網站 （默認運行在127.0.0.1:8000端口上）
-</code></pre><p>第一次啟動 seahub 時，seahub.sh 腳本會提示創建一個 seafile 管理員帳號。
+</code></pre></div><p>運行安裝腳本並回答預設問題。在 seafile-server-latest 目錄下：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./seafile.sh start <span style="color:#75715e"># 啟動 Seafile 服務</span>
+./seahub.sh start <span style="color:#75715e"># 啟動 Seahub 網站 （默認運行在127.0.0.1:8000端口上）</span>
+</code></pre></div><p>第一次啟動 seahub 時，seahub.sh 腳本會提示創建一個 seafile 管理員帳號。
 7.0.x 版本之後，8000端口默認監聽在127.0.0.1地址上，這意味著無法直接通過8000端口訪問 Seafile 服務。建議配置 Nginx 反向代理。</p>
 <h2 id="step-5-設置-seafile-隨系統自行啓動">Step 5 設置 Seafile 隨系統自行啓動</h2>
-<p>新建 seafile.service 文件。填入內容：</p>
-<pre><code>nano /etc/systemd/system/seafile.service
+<p>在路徑下 <code>/etc/systemd/system/seafile.service</code> 新建 <code>seafile.service</code> 文件。填入內容：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">[</span>Unit<span style="color:#f92672">]</span>
+Description<span style="color:#f92672">=</span>Seafile
+<span style="color:#75715e"># add mysql.service or postgresql.service depending on your database to the line below</span>
+<span style="color:#75715e"># 如果沒有使用 memcached 則去掉 memcached.service</span>
+After<span style="color:#f92672">=</span>network.target mariadb.service memcached.service mysql.service
 
-[Unit]
-Description=Seafile
-# add mysql.service or postgresql.service depending on your database to the line below
-# 如果沒有使用 memcached 則去掉 memcached.service
-After=network.target mariadb.service memcached.service mysql.service
-[Service]
-Type=oneshot
-ExecStart=/opt/seafile/seafile-server-latest/seafile.sh start
-# 如果 seahub 使用了 nginx 反代，請修改為 ExecStart=/opt/seafile/seafile-server-latest/seahub.sh start-fastcgi
-ExecStart=/opt/seafile/seafile-server-latest/seahub.sh start
-ExecStop=/opt/seafile/seafile-server-latest/seafile.sh stop
-ExecStop=/opt/seafile/seafile-server-latest/seahub.sh stop
-RemainAfterExit=yes
-# User 和 Group 如果未建立 seafile 用戶和用戶組，則修改為 root，否則無法啟動。
-User=seafile
-Group=seafile
-[Install]
-WantedBy=multi-user.target
-</code></pre><p>使 systemctl 配置生效</p>
-<pre><code>systemctl daemon-reload
+<span style="color:#f92672">[</span>Service<span style="color:#f92672">]</span>
+Type<span style="color:#f92672">=</span>oneshot
+ExecStart<span style="color:#f92672">=</span>/opt/seafile/seafile-server-latest/seafile.sh start
+<span style="color:#75715e"># 如果 seahub 使用了 nginx 反代，請修改為 ExecStart=/opt/seafile/seafile-server-latest/seahub.sh start-fastcgi</span>
+ExecStart<span style="color:#f92672">=</span>/opt/seafile/seafile-server-latest/seahub.sh start
+ExecStop<span style="color:#f92672">=</span>/opt/seafile/seafile-server-latest/seafile.sh stop
+ExecStop<span style="color:#f92672">=</span>/opt/seafile/seafile-server-latest/seahub.sh stop
+RemainAfterExit<span style="color:#f92672">=</span>yes
+<span style="color:#75715e"># User 和 Group 如果未建立 seafile 用戶和用戶組，則修改為 root，否則無法啟動。</span>
+User<span style="color:#f92672">=</span>seafile
+Group<span style="color:#f92672">=</span>seafile
 
-systemctl start seafile #啟動seafile
-systemctl stop seafile #停止seafile
-systemctl enable seafile #設置seafile隨系統啟動
-systemctl is-enabled seafile #檢查seafile是否已經設置為自啟動
-systemctl disable seafile #關閉seafile隨系統啟動
-</code></pre><p>至此，Seafile 已經可以正常使用。其他遇到的坑將在今後進一步補充。</p>
+<span style="color:#f92672">[</span>Install<span style="color:#f92672">]</span>
+WantedBy<span style="color:#f92672">=</span>multi-user.target
+</code></pre></div><p>使 systemctl 配置生效：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">systemctl daemon-reload
+
+systemctl start seafile <span style="color:#75715e">#啟動seafile</span>
+systemctl stop seafile <span style="color:#75715e">#停止seafile</span>
+systemctl enable seafile <span style="color:#75715e">#設置seafile隨系統啟動</span>
+systemctl is-enabled seafile <span style="color:#75715e">#檢查seafile是否已經設置為自啟動</span>
+systemctl disable seafile <span style="color:#75715e">#關閉seafile隨系統啟動</span>
+</code></pre></div><p>至此，Seafile 已經可以正常使用。其他遇到的坑將在今後進一步補充。</p>
 <h2 id="其他">其他</h2>
-<p>低配置服務器在運行 Seafile Pro 時會發現內存和 Swap 佔用極高，如果硬盤 io 受限會導致系統運行極其緩慢，這是由於搜索功能基於 Elasticsearch 服務，這是一個 Java 進程。Java 運行會消耗大量內存，要修改 Java 堆内存大小，可以通过修改 jvm 配置文件来修改 Elasticsearch 使用的内存大小空间。例如，修改为 512m 内存空间。修改 seafile-server-latest/pro/elasticsearch/config/jvm.options 文件的以下配置项：</p>
-<pre><code>-Xms512m # 最小使用內存空間
--Xmx512m # 最大使用內存空間
-### 建议将以上两个配置项的值设置为一样大小。
-</code></pre><p>重啓服務後生效。通過修改以上參數可以緩解內存和 Swap 被沾滿導致的系統運行緩慢問題。如果不需要搜索和其他相關服務，可以進入 seafevents.conf 關閉。</p>
+<p>低配置服務器在運行 Seafile Pro 時會發現內存和 Swap 佔用極高，如果硬盤 io 受限會導致系統運行極其緩慢，這是由於搜索功能基於 Elasticsearch 服務，這是一個 Java 進程。Java 運行會消耗大量內存，要修改 Java 堆内存大小，可以通过修改 jvm 配置文件来修改 Elasticsearch 使用的内存大小空间。例如，修改为 512m 内存空间。修改 <code>seafile-server-latest/pro/elasticsearch/config/jvm.options</code> 文件的以下配置项：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">-Xms512m <span style="color:#75715e"># 最小使用內存空間</span>
+-Xmx512m <span style="color:#75715e"># 最大使用內存空間</span>
+<span style="color:#75715e">### 建议将以上两个配置项的值设置为一样大小。</span>
+</code></pre></div><p>重啓服務後生效。通過修改以上參數可以緩解內存和 Swap 被沾滿導致的系統運行緩慢問題。如果不需要搜索和其他相關服務，可以進入 <code>seafevents.conf</code> 關閉。</p>
 <hr>
 <blockquote>
 <p>參考資料：</p>
@@ -256,7 +251,7 @@ systemctl disable seafile #關閉seafile隨系統啟動
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2021 by Miao with Love.
+			&copy; 2021 Miao.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

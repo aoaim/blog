@@ -1,98 +1,63 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://miaom.uk/categories/</loc>
+    <loc>/categories/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/tags/linux/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/post/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/2021/02/my-linux-experiment-and-routine/</loc>
+    <lastmod>2021-02-07T08:39:41+08:00</lastmod>
+  </url><url>
+    <loc>/tags/python/</loc>
     <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/</loc>
+  </url><url>
+    <loc>/2021/01/how-to-use-conda/</loc>
     <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/post/</loc>
-    <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/tags/python/</loc>
-    <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/tags/</loc>
-    <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2021/01/how-to-use-conda-in-a-project/</loc>
-    <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/categories/%E8%88%88%E8%B6%A3%E5%AD%B8%E7%BF%92/</loc>
-    <lastmod>2021-01-27T19:48:41+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2021/01/disscuss-the-elegance-of-the-program/</loc>
+  </url><url>
+    <loc>/2021/01/disscuss-the-elegance-of-the-program/</loc>
     <lastmod>2021-01-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2021/01/a-crash-course-in-python/</loc>
+  </url><url>
+    <loc>/2021/01/a-crash-course-in-python/</loc>
     <lastmod>2021-01-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/tags/linux/</loc>
+  </url><url>
+    <loc>/2021/01/how-to-install-jupyter-notebook-in-your-server/</loc>
     <lastmod>2021-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2021/01/how-to-install-jupyter-notebook-in-your-server/</loc>
-    <lastmod>2021-01-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2020/12/the-note-of-python-crash-course/</loc>
+  </url><url>
+    <loc>/2020/12/the-note-of-python-crash-course/</loc>
     <lastmod>2020-12-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2020/11/how-to-use-acme/</loc>
+  </url><url>
+    <loc>/2020/11/how-to-use-acme/</loc>
     <lastmod>2020-11-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/tags/gtd/</loc>
+  </url><url>
+    <loc>/tags/gtd/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2020/10/141/</loc>
+  </url><url>
+    <loc>/2020/10/141/</loc>
     <lastmod>2020-10-26T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/</loc>
+  </url><url>
+    <loc>/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/</loc>
     <lastmod>2020-10-16T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/2020/09/aapanel-connot-found-pm2/</loc>
+  </url><url>
+    <loc>/2020/09/aapanel-connot-found-pm2/</loc>
     <lastmod>2020-09-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/about/</loc>
+  </url><url>
+    <loc>/links/</loc>
   </url>
-  
-  <url>
-    <loc>https://miaom.uk/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://miaom.uk/links/</loc>
-  </url>
-  
 </urlset>

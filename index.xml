@@ -2,100 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Miaonote</title>
-    <link>https://miaom.uk/</link>
+    <link>/</link>
     <description>Recent content on Miaonote</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Wed, 27 Jan 2021 19:48:41 +0800</lastBuildDate><atom:link href="https://miaom.uk/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 07 Feb 2021 08:39:41 +0800</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>如何在一個項目中使用 Conda？</title>
-      <link>https://miaom.uk/2021/01/how-to-use-conda-in-a-project/</link>
+      <title>轉向物理機 Linux，這是我的嘗試和日常？</title>
+      <link>/2021/02/my-linux-experiment-and-routine/</link>
+      <pubDate>Sun, 07 Feb 2021 08:39:41 +0800</pubDate>
+      
+      <guid>/2021/02/my-linux-experiment-and-routine/</guid>
+      <description>&lt;p&gt;關於如何安裝/美化 Linux 的教程和文章已經層出不窮，但這類文章似乎一直只儅 Linux 是個新玩具，就和一衆如何安裝 WordPress、Hexo 等博客的文章一樣，只停留在“安裝”這個折騰過程中的“樂趣”上。然而“折騰”的意義始終是有限的，安裝博客的目的應當是爲了寫博文，安裝 Linux 的目的應當是用 Linux，重複一邊又一遍的安裝過程那是在浪費生命。在過去的兩年裏，我一直嘗試在真實環境中使用 Linux Desktop。在這篇文章中，我也嘗試談一談該如何在真實環境中使用 Linux Desktop。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>如何使用 Conda？</title>
+      <link>/2021/01/how-to-use-conda/</link>
       <pubDate>Wed, 27 Jan 2021 19:48:41 +0800</pubDate>
       
-      <guid>https://miaom.uk/2021/01/how-to-use-conda-in-a-project/</guid>
+      <guid>/2021/01/how-to-use-conda/</guid>
       <description>&lt;p&gt;起一個大題目，寫一篇流水賬。作爲個人使用備忘。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>小議程序的優雅</title>
-      <link>https://miaom.uk/2021/01/disscuss-the-elegance-of-the-program/</link>
+      <link>/2021/01/disscuss-the-elegance-of-the-program/</link>
       <pubDate>Thu, 21 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2021/01/disscuss-the-elegance-of-the-program/</guid>
+      <guid>/2021/01/disscuss-the-elegance-of-the-program/</guid>
       <description>&lt;p&gt;主要還是因爲我太蔡了。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Python 速成</title>
-      <link>https://miaom.uk/2021/01/a-crash-course-in-python/</link>
+      <link>/2021/01/a-crash-course-in-python/</link>
       <pubDate>Wed, 20 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2021/01/a-crash-course-in-python/</guid>
+      <guid>/2021/01/a-crash-course-in-python/</guid>
       <description>&lt;p&gt;本篇摘抄與&lt;a href=&#34;https://www.ituring.com.cn/book/tupubarticle/34241&#34;&gt;《數據科學入門（第二版）》第二章&lt;/a&gt;。在圖靈社區閑逛時偶然發現這一章，如獲至寶。這篇不是 Python 的完整教程，但包含了 Python 的基礎操作和基本技能，如同一個速查表。好好學習！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何在服務器上凑一個 Jupyter Notebook</title>
-      <link>https://miaom.uk/2021/01/how-to-install-jupyter-notebook-in-your-server/</link>
+      <link>/2021/01/how-to-install-jupyter-notebook-in-your-server/</link>
       <pubDate>Sun, 17 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2021/01/how-to-install-jupyter-notebook-in-your-server/</guid>
+      <guid>/2021/01/how-to-install-jupyter-notebook-in-your-server/</guid>
       <description>&lt;p&gt;在個人服務器上安裝一個 &lt;code&gt;Jupyer Notebook&lt;/code&gt; 可能可以更&lt;del&gt;折騰&lt;/del&gt;方便的學習和使用 &lt;code&gt;Python&lt;/code&gt; 和 &lt;code&gt;R&lt;/code&gt;。&lt;/p&gt;
 &lt;p&gt;此次安裝環境為 Debian 10 (buster), 64-bit PC。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>《Python 編程：從入門到放棄》學習筆記</title>
-      <link>https://miaom.uk/2020/12/the-note-of-python-crash-course/</link>
+      <link>/2020/12/the-note-of-python-crash-course/</link>
       <pubDate>Tue, 29 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2020/12/the-note-of-python-crash-course/</guid>
+      <guid>/2020/12/the-note-of-python-crash-course/</guid>
       <description>&lt;p&gt;2020 年 12 月 28 日在&lt;a href=&#34;https://www.ituring.com.cn/book/2784&#34;&gt;圖靈社區&lt;/a&gt;購入《Python 編程：從入門到&lt;del&gt;放棄&lt;/del&gt;實踐 第二版》并開始學習。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>acme.sh 工具的使用</title>
-      <link>https://miaom.uk/2020/11/how-to-use-acme/</link>
+      <link>/2020/11/how-to-use-acme/</link>
       <pubDate>Mon, 23 Nov 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2020/11/how-to-use-acme/</guid>
+      <guid>/2020/11/how-to-use-acme/</guid>
       <description>&lt;p&gt;哪個男孩不想要一個屬於自己的 SSL 證書？借助 acme.sh，輕鬆開啟 TLS。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>如何認識和使用 GTD</title>
-      <link>https://miaom.uk/2020/10/141/</link>
+      <link>/2020/10/141/</link>
       <pubDate>Mon, 26 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2020/10/141/</guid>
+      <guid>/2020/10/141/</guid>
       <description>&lt;p&gt;我本身不是一個有條理的人。當我被重重任務壓的頭昏腦脹，我想到了 GTD。這是轉載自 Topbook 的免費教程《&lt;a href=&#34;https://www.bilibili.com/video/BV1wE411176Q&#34;&gt;GTD 自我管理、时间管理教程&lt;/a&gt;》。學習之後，我將在另外一篇文章中記錄我的 GTD 實踐。&lt;/p&gt;
 &lt;p&gt;現在開始學習，祝我好運！&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Seafile Pro 7.x 安裝和使用遇到的問題</title>
-      <link>https://miaom.uk/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/</link>
+      <link>/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/</link>
       <pubDate>Fri, 16 Oct 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/</guid>
+      <guid>/post/201016-seafile-pro-7.x-%E5%AE%89%E8%A3%9D%E5%92%8C%E4%BD%BF%E7%94%A8%E9%81%87%E5%88%B0%E7%9A%84%E5%95%8F%E9%A1%8C/</guid>
       <description>&lt;p&gt;一直想要一個私人的雲存儲，目前主流解決方案都無法滿足我隨時隨地登陸使用和數據自有的需求。經過對比幾個開源雲存儲解決方案，我最終選擇了中國大陸團隊開發的 Seafile。在安裝和使用 Seafile 的過程中不可避免的遇到了一些問題，本着 儘量不使用一鍵腳本 和 儘量搞懂每條命令背後作用 的初衷，將我個人的搭建過程和遇到的問題及解決方法記錄如下，以供日後參考和學習。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>aaPanel pm2 提示 command not found</title>
-      <link>https://miaom.uk/2020/09/aapanel-connot-found-pm2/</link>
+      <link>/2020/09/aapanel-connot-found-pm2/</link>
       <pubDate>Mon, 14 Sep 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/2020/09/aapanel-connot-found-pm2/</guid>
+      <guid>/2020/09/aapanel-connot-found-pm2/</guid>
       <description>&lt;p&gt;可能是系統變量出現問題。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>About</title>
-      <link>https://miaom.uk/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/about/</guid>
+      <guid>/about/</guid>
       <description>Hi，我是 Miao.
 基礎醫學僧，Linux 愛好者，Apple 粉。
 好折騰，技術辣雞但又總被朋友當作電腦/手機高手。
@@ -109,10 +118,10 @@
     
     <item>
       <title>Links</title>
-      <link>https://miaom.uk/links/</link>
+      <link>/links/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://miaom.uk/links/</guid>
+      <guid>/links/</guid>
       <description>這裡是一些我覺得很有用的鏈接
  Connected Paper: a visual tool to help researchers and practitioners find and explore academic papers
 Atman Cloud Translation: ACT 是一個醫學智能翻譯平臺
